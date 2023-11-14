@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pengelolaan Ruangan</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        fieldset{
+            background-color: bisque;
+            text-align: center;
+        }
+
+        .text-title{
+            font-size: 18px;
+        }
+
+        .table{
+            width: fit-content;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        input, select{
+            height: 30px;
+        }
+
+        input, select, textarea{
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+
+        td{
+            padding: 6px;
+            text-align: center;
+        }
+
+        label{
+            font-size: 14px;
+            display: block;
+            text-align: center;
+        }
+
+        button{
+            padding: 7px 10px;
+            border: 0;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .btn-blue{
+            background-color: dodgerblue;
+        }
+
+        .btn-red{
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend style="font-size: 25px;">Kelola Ruangan</legend>
+        <table>
+            <tr>
+                <td>
+            <label for="Nama Ruangan">Nama Ruangan :</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+            <td>
+            <dt>Kategori :</dt>
+            <label for="kategori"></label>
+            <select name="kategori">
+            <option value="Aula">Aula</option>
+            <option value="Mushola">Mushola</option>
+            <option value="Auditorium">Auditorium</option>
+            <option value="Perpustakaan">Perpustakaan</option>
+            <option value="Ruang Kelas 1">Ruang Kelas 1</option>
+            <option value="Ruang Kelas 2">Ruang Kelas 2</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="Deskripsi Rungan">Deskripsi Ruangan :</label></td>
+                <td><textarea type="text" name="Deskripsi Ruangan" id="Deskripsi Ruangan" cols="30" rows="4"></textarea></td>
+            </tr>
+               <td>
+             <dt>Fasilitas Ruangan :</dt>
+        <input type="checkbox" name="fasilitas[]" value="Sound System">Sound System
+        <input type="checkbox" name="fasilitas[]" value="Wifi">Wifi
+        <input type="checkbox" name="fasilitas[]" value="Layar Besar (Proyektor)">Layar Besar (Proyektor)
+        <input type="checkbox" name="fasilitas[]" value="AC">AC
+        <input type="checkbox" name="fasilitas[]" value="Lampu">Lampu 
+            <tr>
+                <td><label for="Kapasitas">Kapasitas :</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="Lokasi Ruangan">Lokasi Ruangan :</label></td>
+                <td><textarea type="text" name="Deskripsi Ruangan" id="Deskripsi Ruangan" cols="30" rows="2"></textarea></td>
+        </table>
+        <tr>
+            <td>
+                <button type="submit" class="btn-blue">Simpan</button>
+                <button type="reset" class="btn-red">Reset</button>
+            </td>
+        </tr>
+    </fieldset>
+    
+</body>
+</html>
